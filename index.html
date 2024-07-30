@@ -14,17 +14,23 @@
   <body>
     <header class="primary-header">
       <div class="container">
-        <a href="#"><img src="images/logo.svg" alt="manage"></a>
-        <nav class="primary-navigation" area-label="Primary">
-          <ul role="list" class="nav-list">
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Community</a></li>
-          </ul>
-        </nav>
-        <button class="button">Get Started</button>
+        <div class="nav-wrapper">
+          <a href="#"><img src="images/logo.svg" alt="manage"></a>
+          <button class="mobile-nav-toggle" area-controls="primary-navigation" area-enpanded="false"><span class="visually-hidden">Menu</span>
+          <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" area-hidden="true">
+          <img class="icon-close" src="images/icon-close.svg" alt="" area-hidden="true">
+          </button>
+          <nav class="primary-navigation" area-label="Primary">
+            <ul role="list" class="nav-list" id="primary-navigation">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button class="button |display-sm-none display-md-inline-flex">Get Started</button>
+        </div> 
       </div>
     </header>
 
