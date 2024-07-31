@@ -16,11 +16,11 @@
       <div class="container">
         <div class="nav-wrapper">
           <a href="#"><img src="images/logo.svg" alt="manage"></a>
-          <button class="mobile-nav-toggle" area-controls="primary-navigation" area-enpanded="false"><span class="visually-hidden">Menu</span>
-          <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" area-hidden="true">
-          <img class="icon-close" src="images/icon-close.svg" alt="" area-hidden="true">
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="visually-hidden">Menu</span>
+          <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="hamburger-menu" aria-hidden="true">
+          <img class="icon-close" src="images/icon-close.svg" alt="close-menu" aria-hidden="true">
           </button>
-          <nav class="primary-navigation" area-label="Primary">
+          <nav class="primary-navigation" aria-label="Primary">
             <ul role="list" class="nav-list" id="primary-navigation">
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Product</a></li>
@@ -29,7 +29,7 @@
               <li><a href="#">Community</a></li>
             </ul>
           </nav>
-          <button class="button | display-sm-none display-md-inline-flex">Get Started</button>
+          <button class="button display-sm-none display-md-inline-flex">Get Started</button>
         </div> 
       </div>
     </header>
@@ -38,7 +38,7 @@
       <section class="padding-block-700">
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div class="flow">
               <h1 class="fw-bold fs-primary-heading">Bring everyone together to build better products</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reprehenderit ab minus! Asperiores, dolorum doloribus quia, vel, eos dolor porro reiciendis maxime optio error animi fugiat accusamus voluptate.</p>
               <button class="button">Get Started</button>
@@ -53,23 +53,32 @@
       <section class="padding-block-700">
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div class="flow">
               <h2 class="fs-secondary-heading fw-bold">What's different about Manage</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reprehenderit ab minus! Asperiores, dolorum doloribus quia, vel, eos dolor porro reiciendis maxime optio error animi fugiat accusamus voluptate.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reprehenderit ab minus! Asperiores, dolorum doloribus quia, vel, eos dolor porro.</p>
             </div>
-          </div>
           <div>
-            <ul role="list" class="numbered-items">
-              <li><h3 class="fs-600 fw-bold">Track company-wide progress</h3>
-              <p></p>
+            <ul role="list" class="numbered-items | flow">
+              <li>
+                <div class="flow"  style="--flow-spacer: 1em">
+                  <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
+                <p data-width="wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid ea facilis repellat ullam ipsam quisquam expedita quam.</p>
+                </div>
             </li>
-              <li><h3 class="fs-600 fw-bold">Advanced built-in reports</h3>
-              <p></p>
+              <li>
+                <div class="flow"  style="--flow-spacer: 1em">
+                  <h3 class="fs-600 fw-bold">Advanced built-in reports</h3>
+                <p data-width="wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid ea facilis repellat ullam ipsam quisquam expedita quam.</p>
+                </div>
             </li>
-              <li><h3 class="fs-600 fw-bold">Everything you need in one place</h3>
-              <p></p>
+              <li>
+                <div class="flow"  style="--flow-spacer: 1em">
+                  <h3 class="fs-600 fw-bold">Everything you need in one place</h3>
+                <p data-width="wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid ea facilis repellat ullam ipsam quisquam expedita quam.</p>
+                </div>
             </li>
             </ul>
+          </div>
           </div>
         </div>
       </section>
@@ -98,16 +107,16 @@
         <div class="even-columns">
           <div>
             <a href="#"><img src="images/logo.svg" alt="manage"></a>
-            <ul role="list" area-label="social links">
-              <li><a href="#" area-label="facebook"></a></li>
-              <li><a href="#" area-label="youtube"></a></li>
-              <li><a href="#" area-label="twitter"></a></li>
-              <li><a href="#" area-label="pinterest"></a></li>
-              <li><a href="#" area-label="instagram"></a></li>
+            <ul role="list" aria-label="social links">
+              <li><a href="#" aria-label="facebook"></a></li>
+              <li><a href="#" aria-label="youtube"></a></li>
+              <li><a href="#" aria-label="twitter"></a></li>
+              <li><a href="#" aria-label="pinterest"></a></li>
+              <li><a href="#" aria-label="instagram"></a></li>
             </ul>
           </div>
           <div>
-            <nav class="footer-nav" area-label="Footer">
+            <nav class="footer-nav" aria-label="Footer">
               <ul role="list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pricing</a></li>
